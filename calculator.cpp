@@ -12,7 +12,7 @@ void wait1()
 
 int main()
 {
-  //while(true)
+  while(true){
   {
    double answer;
    double n1;
@@ -69,7 +69,7 @@ int main()
   wait1();
    */
    std::cout<<"##########################"<<'\n';
-   
+   }
    }
  return 0;
 }
