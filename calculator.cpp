@@ -20,9 +20,8 @@ int main()
    str action;
 
 
-      std::cout<<"############## "<<'\n';
-   std::cout<<"############## "<<'\n';
-   std::cout<<"##############"<<'\n';
+      std::cout<<"########CALCULATOR######## "<<'\n';
+  
    
    std::cout<<"Number 1 is?  "<<'\n';
   
@@ -69,9 +68,8 @@ int main()
   std::cout<<"1"<<'\n';
   wait1();
    */
-   std::cout<<"############## "<<'\n';
-   std::cout<<"############## "<<'\n';
-   std::cout<<"##############"<<'\n';
+   std::cout<<"##########################"<<'\n';
+   
    }
  return 0;
 }
