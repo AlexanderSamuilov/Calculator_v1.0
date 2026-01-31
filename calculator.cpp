@@ -12,7 +12,8 @@ void wait1()
 
 int main()
 {
-  //while(true)
+  std::cout<<"######## ALEX'S CALCULATOR ######## "<<'\n';
+  while(true){
   {
    double answer;
    double n1;
@@ -20,7 +21,7 @@ int main()
    str action;
 
 
-      std::cout<<"########CALCULATOR######## "<<'\n';
+      std::cout<<"########################## "<<'\n';
   
    
    std::cout<<"Number 1 is?  "<<'\n';
@@ -69,7 +70,7 @@ int main()
   wait1();
    */
    std::cout<<"##########################"<<'\n';
-   
+   }
    }
  return 0;
 }
