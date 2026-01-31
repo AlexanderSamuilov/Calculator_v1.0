@@ -12,7 +12,10 @@ void wait1()
 
 int main()
 {
+
   std::cout<<"######## ALEX'S CALCULATOR ######## "<<'\n';
+
+
   while(true){
   {
    double answer;
