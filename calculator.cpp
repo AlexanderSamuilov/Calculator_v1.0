@@ -9,8 +9,8 @@ typedef std::string str;
 int main()
 {
 
-  std::cout<<"######## ALEX'S CALCULATOR ######## "<<'\n';
-
+  std::cout<<"######## ALEX'S CALCULATOR ########\n";
+  std::cout<<"############v2.5###################\n";
 
   while(true){
   {
