@@ -4,10 +4,6 @@
 #include <chrono>
 typedef std::string str;
 
-void wait1()
-{
-  std::this_thread::sleep_for(std::chrono::seconds(1));
-}
 
 
 int main()
@@ -19,9 +15,9 @@ int main()
   while(true){
   {
    double answer;
-   double n1;
+   double n1;        //declaring variables
    double n2;
-   str action;
+   char action;
 
 
       std::cout<<"########################## "<<'\n';
@@ -29,52 +25,42 @@ int main()
    
    std::cout<<"Number 1 is?  "<<'\n';
   
-   std::cin>>n1;
+   
+   std::cin>>n1;                         //input for first number
  
    std::cout<<"Action(+,-,*,/)?"<<'\n';
 
-   std::cin>>action;
+   std::cin>>action;                    //input for the action
 
    std::cout<<"Number 2 is?  "<<'\n';
-   std::cin>>n2;
-   if(action == "+")
-   {
-    answer = n1 + n2;
-    std::cout<<"Answer is "<<answer<<'\n';
-   }
-   else if(action == "-")
-   {
-    answer = n1 - n2;
-    std::cout<<"Answer is "<<answer<<'\n';
-   }
-   else if(action ==  "*")
-   {
-    answer = n1 * n2;
-    std::cout<<"Answer is "<<answer<<'\n';
-   }
-   else if(action ==  "/")
-   {
-    answer = n1 / n2;
-    std::cout<<"Answer is "<<answer<<'\n';
-   }
-   else if(action !=  "+" && "-" && "*" && "/")
-   {
-    std::cout<<"ERROR"<<'\n';
-    
-   }
-   
 
-  /*std::cout<<"Answer in... "<<'\n';
-  std::cout<<"3"<<'\n';
-  wait1();
-  std::cout<<"2"<<'\n';
-  wait1();
-  std::cout<<"1"<<'\n';
-  wait1();
-   */
+   std::cin>>n2;                        //input for secound number
+   
+  switch(action)
+  {
+      case '+':
+       answer = n1 + n2;
+       std::cout<<"Answer is "<<answer<<'\n';
+       break;
+      case '-':
+       answer = n1 - n2;
+       std::cout<<"Answer is "<<answer<<'\n';
+       break;                                                  //instead of if statements I used switches that do the same thing
+      case '*':
+       answer = n1 * n2;
+       std::cout<<"Answer is "<<answer<<'\n';
+       break;
+      case '/':
+       answer = n1 / n2;
+       std::cout<<"Answer is "<<answer<<'\n';
+       break;
+      default:
+       std::cout<<"ERROR\n";
+       break;
+  }   
+
    std::cout<<"##########################"<<'\n';
    }
    }
  return 0;
 }
-//not ai
